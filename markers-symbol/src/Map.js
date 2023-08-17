@@ -3,8 +3,7 @@ import mapboxgl from "mapbox-gl";
 import "./Map.css";
 import geoJson from "./chicago-parks.json";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA";
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
 const Map = () => {
   const mapContainerRef = useRef(null);

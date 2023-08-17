@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "new-start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build"
   },
   "browserslist": {
