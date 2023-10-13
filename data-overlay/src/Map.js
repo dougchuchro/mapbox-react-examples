@@ -87,7 +87,9 @@ const Map = () => {
       );
 
       map.setPaintProperty('countries', 'fill-color', {
+// eslint-disable-next-line
         property: active.property,
+// eslint-disable-next-line
         stops: active.stops
       });
 
@@ -96,10 +98,12 @@ const Map = () => {
 
     // Clean up on unmount
     return () => map.remove();
+// eslint-disable-next-line
   }, []);
 
   useEffect(() => {
     paint();
+// eslint-disable-next-line
   }, [active]);
 
   const paint = () => {
